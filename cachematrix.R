@@ -49,7 +49,7 @@ cacheSolve <- function(x, ...) {
     # else calculate it and store in cache and return it
     if(!is.null(TmpInverse)){
         message("getting cached data")
-        return(TmpInverse)
+        TmpInverse
     }
     else {
         message("calculating inverse")
