@@ -46,6 +46,7 @@ cacheSolve <- function(x, ...) {
     TmpInverse <- x$getInverse()
     
     # If value of Inverse is NOT NULL returns that value
+    # else calculate it and store in cache and return it
     if(!is.null(TmpInverse)){
         message("getting cached data")
         return(TmpInverse)
